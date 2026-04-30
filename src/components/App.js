@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../actions";
-import './../styles/App.css';
+import "../styles/App.css";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -21,7 +21,8 @@ const App = () => {
 
       {data && (
         <p>
-          <strong>{data.title}</strong><br />
+          <strong>{data.title}</strong>
+          <br />
           {data.body}
         </p>
       )}
